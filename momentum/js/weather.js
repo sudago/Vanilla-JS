@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const API_KEY = REACT_APP_WEATHER_API_KEY;
+=======
+
+>>>>>>> e2b0a853836546b2e825f36e4ff58a859d598d83
 
 function onGeoOk(position) {
     const lat = position.coords.latitude;
