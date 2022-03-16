@@ -9,13 +9,13 @@ const dDay = document.querySelector("#d_day");
 function getTodayTime() {
     const date = new Date();
     const year = date.getFullYear();
-    const month = date.getMonth();
+    const month = date.getMonth()+1;
     const datee = date.getDate();
     const hours = String(date.getHours()).padStart(2, "0");
     const minutes = String(date.getMinutes()).padStart(2, "0");
     const seconds = String(date.getSeconds()).padStart(2, "0");
     today.innerText = 
-    `${year} ${month+1}/${datee} ${hours}h ${minutes}m ${seconds}s`;
+    `${year} ${month}/${datee} ${hours}h ${minutes}m ${seconds}s`;
 }
 
 function setDday() {
