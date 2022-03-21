@@ -8,22 +8,50 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form class="hidden" id="login-form">
-        <input required max-length="15" type="text" placeholder="What is your name?">
-        <input type="submit" value="Log In">
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <h2 id="clock">00:00:00</h2>
-    <form id="todo-form">
-        <input required type="text" placeholder="Write a To Do and Press Enter">
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
+    <div id="weather">
+        <span></span>
         <span></span>
         <span></span>
     </div>
-    <div id="weather">
-        <span></span>
+    <div id="empty-container"></div>
+    <div id="large-container">
+        <div id="second-container">
+            <form class="hidden" id="login-form">
+                <input required max-length="15" type="text" placeholder="What is your name?">
+                <input type="submit" value="Log In">
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+            <div id="todos">
+                <span>✨To Do List</span>
+                <form id="todo-form">
+                    <input required type="text">
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
+        
+        <div id="third-container">
+                <div id="today">
+                    <div id="date">mm/dd/d</div>
+                    <div id="clock">00:00:00</div>
+                </div>  
+                <div id="links">
+                        <a href="https://www.google.co.kr/" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/IOS_Google_icon.png">
+                        </a>
+                        <a href="https://www.naver.com/" target="_blank">
+                            <img src="https://www.naver.com/favicon.ico?1">
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="https://www.youtube.com/s/desktop/924317b2/img/favicon_48x48.png">
+                        </a>
+                        <a href="https://www.inflearn.com/my-courses" target="_blank">
+                            <img src="https://www.inflearn.com/favicon.ico">
+                        </a>
+                </div>
+         </div>
+    </div>
+    <div id="quote">
         <span></span>
         <span></span>
     </div>
